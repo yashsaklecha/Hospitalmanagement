@@ -8,6 +8,8 @@ public class Login_page extends JFrame {
     JTextField textField;
     JTextField department;
     JPasswordField jPasswordField;
+
+    JButton b1,b2;
     Login_page(){
         super();
 
@@ -58,6 +60,20 @@ public class Login_page extends JFrame {
         JLabel label = new JLabel(imageIcon1);
         label.setBounds(300,-10,400,280);
         add(label);
+
+        b1= new JButton("Login");
+        b1.setBackground(Color.BLACK);
+        b1.setFont(new Font ("serif",Font.BOLD,15));
+        b1.setBounds(40,180,120,30);
+        b1.setForeground(Color.WHITE);
+        add(b1);
+
+        b2= new JButton("Cancel");
+        b2.setBackground(Color.BLACK);
+        b2.setFont(new Font ("serif",Font.BOLD,15));
+        b2.setBounds(180,180,120,30);
+        b2.setForeground(Color.WHITE);
+        add(b2);
 
 
         setSize (700,300);
