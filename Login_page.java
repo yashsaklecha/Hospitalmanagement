@@ -114,7 +114,7 @@ public class Login_page extends JFrame implements ActionListener {
 
                 ResultSet resultSet = pstmt.executeQuery();
                 if (resultSet.next()) {
-                    new test();
+                    new Reception();
                     setVisible(false);
                 } else {
                     JOptionPane.showMessageDialog(null, "Invalid credentials or department.");
